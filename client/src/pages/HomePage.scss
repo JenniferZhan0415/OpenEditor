@@ -1,0 +1,54 @@
+.home {
+    text-align: center;
+    padding: 7rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        margin: 0 0 6rem 0;
+    }
+    &__version-box {
+        display: flex;
+        flex-direction: column;
+        width: 50rem;
+    }
+
+    &__version {
+        border: 2px solid black;
+        width: 8rem;
+        border-radius: 70px;
+        font-size: 2rem;
+        font-weight: 300;
+        margin: 0;
+        align-self: end;
+
+        &:hover {
+            background-color: black;
+            color: white;
+        }
+    }
+    &__button {
+        margin: 0 2rem;
+        border-radius: 3rem;
+        font-family: "IBM Plex Sans", sans-serif;
+        font-weight: 300;
+        font-size: 2rem;
+        padding: 1rem 6rem;
+        &:hover {
+            cursor: pointer;
+            background-color: black;
+            color: white;
+        }
+    }
+    &__text {
+        font-size: 2rem;
+        font-weight: 200;
+        font-style: italic;
+        margin: 0.5rem 0;
+    }
+    &__content {
+        margin-top: 5rem;
+    }
+}
