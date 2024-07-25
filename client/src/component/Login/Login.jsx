@@ -39,13 +39,9 @@ export default function Login() {
   };
   return (
     <>
-
-      
-     
-      <section className="login">
-        {/* <h1 className="header-title">OpenEditor</h1> */}
+      <section className={`${isSubmitted == true ? "login--hidden" : "login"}`}>
         <Header />
-        <form className="form" onSubmit={handleSubmit} ref={formRef}>
+        <form className={`form `} onSubmit={handleSubmit} ref={formRef}>
           <h2 className="form__title">Welcome back!</h2>
           <label className="form__label" htmlFor="email">
             Email:{" "}
@@ -69,19 +65,16 @@ export default function Login() {
             required
           />
           <div className="form__button-box">
-            <Link to={"/template"}>
-              <button className="form__button">Log In</button>
-            </Link>
-            <Link to={"/home"}>
-              <button className="form__button">Cancel</button>
-            </Link>
+            <button className="form__button">Log In</button>
+
+            <button className="form__button">Cancel</button>
           </div>
         </form>
-{console.log(idArray.length)}
+      </section>
+      {console.log(idArray.length)}
       {isSubmitted !== false && (
         <>{idArray.length > 0 && <>{<Documents idArray={idArray} />}</>}</>
-      </section>
-
+      )}
     </>
   );
 }
