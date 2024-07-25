@@ -1,5 +1,8 @@
 import { useRef } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
+import "./Login.scss";
+import Header from "../Header/Header";
 
 export default function Login() {
   const formRef = useRef();
@@ -22,13 +25,42 @@ export default function Login() {
   };
   return (
     <>
-      <form onSubmit={handleSubmit} ref={formRef}>
-        <label htmlFor="email">Email</label>
-        <input type="email" name="email" id="email" required />
-        <label htmlFor="password">Password</label>
-        <input type="password" name="password" id="password" required />
-        <button>Log In</button>
-      </form>
+      <section className="login">
+        {/* <h1 className="header-title">OpenEditor</h1> */}
+        <Header />
+        <form className="form" onSubmit={handleSubmit} ref={formRef}>
+          <h2 className="form__title">Welcome back!</h2>
+          <label className="form__label" htmlFor="email">
+            Email:{" "}
+          </label>
+          <input
+            className="form__input"
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="student@brainstaion.com"
+          />
+          <label className="form__label" htmlFor="password">
+            Password:{" "}
+          </label>
+          <input
+            className="form__input"
+            type="password"
+            name="password"
+            id="password"
+            required
+          />
+          <div className="form__button-box">
+            <Link to={"/template"}>
+              <button className="form__button">Log In</button>
+            </Link>
+            <Link to={"/home"}>
+              <button className="form__button">Cancel</button>
+            </Link>
+          </div>
+        </form>
+      </section>
     </>
   );
 }
