@@ -5,12 +5,20 @@
     justify-content: center;
     align-items: center;
 
+    // &__image-box {
+    //     margin: 0 1rem;
+    //     max-width: 20rem;
+    //     max-height: 10rem;
+    // }
+
     &__image {
-        margin: 1rem;
+        margin: 0 1rem;
         max-width: 20rem;
         max-height: 18rem;
         cursor: pointer;
         border-radius: 5px;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+
         &:hover {
             border: 1px solid lightcoral;
         }

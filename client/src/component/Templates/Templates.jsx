@@ -10,7 +10,7 @@ export default function Templates() {
   return (
     <>
       <section className="template">
-        <div>
+        <div className="template__image-box">
           <Link to={"/"}>
             <img
               className="template__image"
@@ -19,7 +19,7 @@ export default function Templates() {
             />
           </Link>
         </div>
-        <div>
+        <div className="template__image-box">
           <Link to={`/documents/${uuidv4()}?template=resume`}>
             <img
               className="template__image"
@@ -28,7 +28,7 @@ export default function Templates() {
             />
           </Link>
         </div>
-        <div>
+        <div className="template__image-box">
           <Link to={`/documents/${uuidv4()}?template=travel`}>
             <img
               className="template__image"
