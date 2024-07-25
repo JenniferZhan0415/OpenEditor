@@ -4,13 +4,15 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 import Templates from "./component/Templates/Templates";
 import HomePage from "./pages/HomePage";
+import Login from "./component/Login/Login";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/Home" element={<HomePage />} />
+          <Route path="/home" element={<HomePage />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/template" element={<Templates />}></Route>
           <Route
             path="/"
