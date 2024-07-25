@@ -3,6 +3,7 @@ import { createServer } from "http";
 import { Server as SocketIOSever } from "socket.io";
 import fs from "fs";
 import cors from "cors";
+import loginRouter from "./routers/login.js";
 
 const app = express();
 
@@ -65,3 +66,5 @@ io.on("connection", (socket) => {
     });
   });
 });
+
+app.use("/login", loginRouter);
