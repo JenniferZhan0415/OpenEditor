@@ -1,0 +1,18 @@
+.template {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &__image {
+        margin: 1rem;
+        max-width: 20rem;
+        max-height: 18rem;
+        cursor: pointer;
+        border-radius: 5px;
+        &:hover {
+            border: 1px solid lightcoral;
+        }
+    }
+}
