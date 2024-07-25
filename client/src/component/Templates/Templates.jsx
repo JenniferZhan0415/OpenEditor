@@ -7,16 +7,6 @@ import axios from "axios";
 import { v4 as uuidv4 } from "uuid";
 
 export default function Templates() {
-  const ChangeTemplate = async (template) => {
-    try {
-      const response = await axios.get(
-        `http://localhost:5173/template/${template}`
-      );
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
   return (
     <>
       <section className="template">
@@ -41,7 +31,6 @@ export default function Templates() {
         <div>
           <Link to={`/documents/${uuidv4()}?template=travel`}>
             <img
-              onClick={() => ChangeTemplate("travel")}
               className="template__image"
               src={TravelPlanImage}
               alt="create a travel plan file image"
