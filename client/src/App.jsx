@@ -9,13 +9,12 @@ import { Documents } from "./pages/documents/Documents";
 
 import Login from "./component/Login/Login";
 
-
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/home" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
 
           <Route path="/documents" element={<Documents />} />
 
@@ -23,7 +22,7 @@ function App() {
 
           <Route path="/template" element={<Templates />}></Route>
           <Route
-            path="/"
+            path="/new"
             exact
             element={<Navigate to={`/documents/${uuidv4()}`} />}
           ></Route>

@@ -1,7 +1,315 @@
 {
   "ops": [
     {
-      "insert": "helooo team \n"
+      "attributes": {
+        "font": "monospace",
+        "bold": true
+      },
+      "insert": "Project Name: OpenEditor"
+    },
+    {
+      "attributes": {
+        "header": 1
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "color": "#ff9900",
+        "font": "monospace",
+        "bold": true
+      },
+      "insert": "Contributors : Anjali & Jennifer"
+    },
+    {
+      "attributes": {
+        "header": 3
+      },
+      "insert": "\n"
+    },
+    {
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace",
+        "color": "#008a00"
+      },
+      "insert": "Overview:"
+    },
+    {
+      "attributes": {
+        "header": 2
+      },
+      "insert": "\n"
+    },
+    {
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "color": "#1d1c1d",
+        "font": "monospace"
+      },
+      "insert": "Develop a real-time collaborative text editor application that enables multiple users to edit and interact with documents at same time. "
+    },
+    {
+      "attributes": {
+        "list": "bullet"
+      },
+      "insert": "\n"
+    },
+    {
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace",
+        "color": "#1d1c1d"
+      },
+      "insert": "The application will support live collaboration, allowing users to see real-time changes made by others, and will provide functionality for saving, retrieving, and editing previous documents. "
+    },
+    {
+      "attributes": {
+        "list": "bullet"
+      },
+      "insert": "\n"
+    },
+    {
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace",
+        "color": "#1d1c1d"
+      },
+      "insert": "This project aims to create a seamless user experience for teams and individuals working together on documents, with a focus on reliability, usability, and data persistence."
+    },
+    {
+      "attributes": {
+        "list": "bullet"
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "header": 2
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace",
+        "color": "#008a00"
+      },
+      "insert": "Functions:"
+    },
+    {
+      "attributes": {
+        "header": 2
+      },
+      "insert": "\n"
+    },
+    {
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "User Log in"
+    },
+    {
+      "attributes": {
+        "list": "ordered"
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "Make request from API to display previous documents"
+    },
+    {
+      "attributes": {
+        "list": "ordered"
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "Allow users to choose the template they want"
+    },
+    {
+      "attributes": {
+        "list": "ordered"
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "Save the documents to API Using a post request"
+    },
+    {
+      "attributes": {
+        "list": "ordered"
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace",
+        "color": "#ff9900"
+      },
+      "insert": "Invite friend to live editing"
+    },
+    {
+      "attributes": {
+        "list": "ordered"
+      },
+      "insert": "\n"
+    },
+    {
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "header": 2
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace",
+        "color": "#008a00"
+      },
+      "insert": "Challenges:"
+    },
+    {
+      "attributes": {
+        "header": 2
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "All most delete everything"
+    },
+    {
+      "attributes": {
+        "list": "ordered"
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "Learn new tools Socket.io and Quill "
+    },
+    {
+      "attributes": {
+        "list": "ordered"
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "Add saving functionality"
+    },
+    {
+      "attributes": {
+        "list": "ordered"
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "Time Management"
+    },
+    {
+      "attributes": {
+        "list": "ordered"
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "header": 2
+      },
+      "insert": "\n\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace",
+        "color": "#008a00"
+      },
+      "insert": "Future Plan:"
+    },
+    {
+      "attributes": {
+        "header": 2
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "Sign up function"
+    },
+    {
+      "attributes": {
+        "list": "ordered"
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "More templates"
+    },
+    {
+      "attributes": {
+        "list": "ordered"
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "Share function"
+    },
+    {
+      "attributes": {
+        "list": "ordered"
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "Timestamp "
+    },
+    {
+      "attributes": {
+        "list": "ordered"
+      },
+      "insert": "\n"
     }
   ]
 }

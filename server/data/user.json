@@ -4,9 +4,29 @@
     "email": "am@gmail.com",
     "password": "1234",
     "documentIds": [
-      "417662b1-3ec1-4479-b7f8-93baaaa056cf",
-      "a1430517-e3ec-46ec-ae51-4958e42daead"
+      {
+        "id": "f7210015-584b-4c7d-9fe8-f28a59c10b31",
+        "title": "Letter"
+      },
+      {
+        "id": "f7210015-584b-4c7d-9fe8-f28a59c10b31",
+        "title": "Grocery List"
+      },
+      {
+        "id": "f7210015-584b-4c7d-9fe8-f28a59c10b31",
+        "title": "Project proposal"
+      }
     ]
   },
-  { "id": 2, "email": "jz@gmail.com", "password": "1234", "documentIds": [] }
+  {
+    "id": 2,
+    "email": "jz@gmail.com",
+    "password": "1234",
+    "documentIds": [
+      {
+        "id": "f7210015-584b-4c7d-9fe8-f28a59c10b31",
+        "title": "Project proposal"
+      }
+    ]
+  }
 ]

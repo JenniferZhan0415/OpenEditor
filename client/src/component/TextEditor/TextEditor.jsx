@@ -26,7 +26,6 @@ export default function TextEditor() {
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const template = queryParams.get("template");
-  let templateContent = null;
 
   // console.log(documentId);
   useEffect(() => {
@@ -44,16 +43,26 @@ export default function TextEditor() {
       }
 
       const fetchDocument = async () => {
+        let templateContent = null;
         if (template) {
           const response = await axios.get(
             `http://localhost:5231/template/${template}`
           );
           templateContent = response.data;
         }
+
         socket.once("load-document", (document) => {
-          quill.setContents(templateContent || document);
+          try {
+            quill.setContents(templateContent || JSON.parse(document));
+          } catch (err) {
+            quill.setContents("");
+          }
           quill.enable();
         });
+        // socket.emit("get-document", documentId, (res) => {
+        //   console.dir(res);
+        //   if (res.data) quill.setContents(res.data);
+        // });
         socket.emit("get-document", documentId);
       };
       fetchDocument();
@@ -123,6 +132,7 @@ export default function TextEditor() {
 
     saveButton.addEventListener("click", () => {
       const contentBody = q.getContents();
+      navigate("/");
       // console.log(documentId);
       // console.dir(contentBody);
       try {
@@ -142,7 +152,7 @@ export default function TextEditor() {
 
     cancelButton.addEventListener("click", () => {
       console.log("clicking on ");
-      navigate("/template");
+      navigate("/login");
     });
 
     q.disable();

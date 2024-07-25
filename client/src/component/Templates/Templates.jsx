@@ -14,7 +14,7 @@ export default function Templates() {
         <Header />
         <section className="template">
           <div className="template__image-box">
-            <Link to={"/"}>
+            <Link to={"/new"}>
               <img
                 className="template__image"
                 src={NewFileImage}

@@ -14,7 +14,7 @@ app.use(json());
 
 app.post("/save/:documentId", (req, res) => {
   const { documentId } = req.params;
-  console.log("in save");
+
   const saveData = req.body;
   fs.writeFile(
     `./data/documents/${documentId}.json`,
@@ -58,9 +58,16 @@ const io = new SocketIOSever(server, {
 
 io.on("connection", (socket) => {
   socket.on("get-document", (documentId) => {
-    const data = "";
     socket.join(documentId);
-    socket.emit("load-document", data);
+
+    fs.readFile(`./data/documents/${documentId}.json`, "utf-8", (err, data) => {
+      if (!err) {
+        socket.emit("load-document", data);
+      } else {
+        socket.emit("load-document", "");
+      }
+    });
+
     socket.on("send-changes", (delta) => {
       socket.broadcast.to(documentId).emit("receive-changes", delta);
     });

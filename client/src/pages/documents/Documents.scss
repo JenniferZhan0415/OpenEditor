@@ -1,0 +1,13 @@
+.documents {
+    text-align: center;
+
+    &__file {
+        margin: 1rem;
+        border: 1px solid black;
+        padding: 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        // width: 20rem;
+    }
+}
