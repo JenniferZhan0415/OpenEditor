@@ -210,6 +210,9 @@
       "insert": "\n"
     },
     {
+      "insert": "\n"
+    },
+    {
       "attributes": {
         "background": "transparent",
         "color": "#00ab44",
@@ -242,45 +245,6 @@
     },
     {
       "insert": "\n"
-    },
-    {
-      "attributes": {
-        "alt": "A small green rectangle to divide sections of the document",
-        "height": "3",
-        "width": "44",
-        "background": "transparent",
-        "color": "#353744"
-      },
-      "insert": {
-        "image": "https://lh7-us.googleusercontent.com/docsz/AD_4nXfciiWk7ciAlBBQV86Cn2Pw7rAzYct_3n_Wk3Vab4g-aFn2lS4umHkYwLZyHJkRGci6bcletzblPtPSsHh1ZqWYpHUFSTA2oS_F-GyiGVBvK9__NgTOdYkDYzPIRj5iHxWiSSYGFjaoO3RBlIaKcMRDrF4j?key=AS5JaHJcbWTDUnmutdxX3Q"
-      }
-    },
-    {
-      "insert": "\n"
-    },
-    {
-      "attributes": {
-        "background": "transparent",
-        "color": "#00ab44",
-        "bold": true
-      },
-      "insert": "ABOUT THE OWNER"
-    },
-    {
-      "attributes": {
-        "header": 1
-      },
-      "insert": "\n"
-    },
-    {
-      "attributes": {
-        "background": "transparent",
-        "color": "#353744"
-      },
-      "insert": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed dolore eiusmod tempor incididunt ut aliqua labore et dolore magna aliqua. "
-    },
-    {
-      "insert": "\n\n"
     }
   ]
 }
