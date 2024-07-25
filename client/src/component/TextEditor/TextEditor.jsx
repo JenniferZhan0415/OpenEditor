@@ -3,7 +3,8 @@ import "quill/dist/quill.snow.css";
 import { useCallback, useEffect, useRef, useState } from "react";
 import io from "socket.io-client";
 import "./TextEditor.scss";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate, useLocation } from "react-router-dom";
+import axios from "axios";
 
 const TOOLBAR_OPTIONS = [
   [{ header: [1, 2, 3, 4, 5, 6, false] }],
@@ -15,11 +16,19 @@ const TOOLBAR_OPTIONS = [
   ["image", "blockquote", "code-block"],
   ["clean"],
 ];
+
 export default function TextEditor() {
   const [socket, setSocket] = useState();
   const [quill, setQuill] = useState();
   const { id: documentId } = useParams();
-  console.log(documentId);
+  const navigate = useNavigate();
+
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const template = queryParams.get("template");
+  let templateContent = null;
+
+  // console.log(documentId);
   useEffect(() => {
     const s = io("http://localhost:5231");
     setSocket(s);
@@ -33,11 +42,21 @@ export default function TextEditor() {
       if (!socket || !quill) {
         return;
       }
-      socket.once("load-document", (document) => {
-        quill.setContents(document);
-        quill.enable();
-      });
-      socket.emit("get-document", documentId);
+
+      const fetchDocument = async () => {
+        if (template) {
+          const response = await axios.get(
+            `http://localhost:5231/template/${template}`
+          );
+          templateContent = response.data;
+        }
+        socket.once("load-document", (document) => {
+          quill.setContents(templateContent || document);
+          quill.enable();
+        });
+        socket.emit("get-document", documentId);
+      };
+      fetchDocument();
     } catch (error) {
       console.log(error);
     }
@@ -91,11 +110,50 @@ export default function TextEditor() {
       theme: "snow",
       modules: { toolbar: TOOLBAR_OPTIONS },
     });
+
+    // add save button
+    const toolbar = wrapper.querySelector(".ql-toolbar");
+    const saveButton = document.createElement("button");
+    saveButton.id = "save-button";
+    saveButton.innerText = "SAVE";
+    const saveButtonSpan = document.createElement("span");
+    saveButtonSpan.classList.add("ql-formats");
+    saveButtonSpan.appendChild(saveButton);
+    toolbar.appendChild(saveButtonSpan);
+
+    saveButton.addEventListener("click", () => {
+      const contentBody = q.getContents();
+      // console.log(documentId);
+      // console.dir(contentBody);
+      try {
+        axios.post(`http://localhost:5231/save/${documentId}`, contentBody);
+      } catch (error) {
+        console.log(error);
+      }
+    });
+
+    const cancelButton = document.createElement("button");
+    cancelButton.id = "cancel-button";
+    cancelButton.innerText = "CANCEL";
+    const cancelButtonSpan = document.createElement("span");
+    cancelButtonSpan.classList.add("ql-formats");
+    cancelButtonSpan.appendChild(cancelButton);
+    toolbar.appendChild(cancelButtonSpan);
+
+    cancelButton.addEventListener("click", () => {
+      console.log("clicking on ");
+      navigate("/template");
+    });
+
     q.disable();
     q.enable(false);
     q.setText("Loading.....");
     setQuill(q);
   }, []);
 
-  return <div className="container" ref={wrapperRef}></div>;
+  return (
+    <>
+      <div className="container" ref={wrapperRef}></div>
+    </>
+  );
 }
