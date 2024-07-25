@@ -1,9 +1,14 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import axios from "axios";
+import { Navigate } from "react-router-dom";
+import { Documents } from "../../pages/documents/Documents";
 
 export default function Login() {
   const formRef = useRef();
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [idArray, setIdArray] = useState([]);
   const password = "1234";
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const email = formRef.current.email.value;
@@ -16,8 +21,15 @@ export default function Login() {
           `http://localhost:5231/login/${email}`
         );
         console.log(response.data);
+        const array = response.data;
+        setIdArray(array);
+        setIsSubmitted(true);
       };
+
       getdocuments();
+      console.log(idArray);
+    } else {
+      alert("Incorrect Password");
     }
   };
   return (
@@ -29,6 +41,10 @@ export default function Login() {
         <input type="password" name="password" id="password" required />
         <button>Log In</button>
       </form>
+      {console.log(idArray.length)}
+      {isSubmitted !== false && (
+        <>{idArray.length > 0 && <>{<Documents idArray={idArray} />}</>}</>
+      )}
     </>
   );
 }

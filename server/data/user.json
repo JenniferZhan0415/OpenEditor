@@ -1,4 +1,12 @@
 [
-  { "id": 1, "email": "am@gmail.com", "password": "1234" },
-  { "id": 2, "email": "jz@gmail.com", "password": "1234" }
+  {
+    "id": 1,
+    "email": "am@gmail.com",
+    "password": "1234",
+    "documentIds": [
+      "417662b1-3ec1-4479-b7f8-93baaaa056cf",
+      "a1430517-e3ec-46ec-ae51-4958e42daead"
+    ]
+  },
+  { "id": 2, "email": "jz@gmail.com", "password": "1234", "documentIds": [] }
 ]
