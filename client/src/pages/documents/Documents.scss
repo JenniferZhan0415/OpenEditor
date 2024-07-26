@@ -1,13 +1,37 @@
 .documents {
-    text-align: center;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    &__section {
+        padding: 1rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50rem;
+    }
+    &__container {
+        display: flex;
+        flex-direction: row;
+    }
+    &__title {
+        align-self: flex-start;
+        padding-left: 2rem;
+    }
     &__file {
-        margin: 1rem;
+        margin: 0 1rem;
         border: 1px solid black;
-        padding: 1rem;
         border-radius: 5px;
         cursor: pointer;
         text-decoration: none;
-        // width: 20rem;
+        width: 13.5rem;
+        height: 18rem;
+    }
+    &__name {
+        margin-top: 8rem;
+        text-align: center;
+        font-weight: 400;
     }
 }

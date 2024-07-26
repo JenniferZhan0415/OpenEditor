@@ -1,6 +1,7 @@
 .header-title {
   font-size: 7rem;
   font-weight: 400;
+  // margin-bottom: 2rem;
 }
 
 .login {
@@ -20,13 +21,14 @@
   align-items: center;
   border: 1px solid black;
   border-radius: 30px;
-  padding: 2rem 0;
+  padding-bottom: 1rem;
+  margin-bottom: 5rem;
 
-  width: 600px;
+  width: 590px;
   &__title {
     font-family: "IBM Plex Sans", sans-serif;
-    font-size: 4rem;
-    margin: 2rem 1rem 3rem;
+    font-size: 3rem;
+    margin: 2rem 1rem 1rem 1rem;
     font-weight: 400;
   }
   &__label {

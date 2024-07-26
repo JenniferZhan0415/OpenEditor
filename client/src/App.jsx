@@ -20,7 +20,7 @@ function App() {
 
           <Route path="/login" element={<Login />} />
 
-          <Route path="/template" element={<Templates />}></Route>
+          {/* <Route path="/template" element={<Templates />}></Route> */}
           <Route
             path="/new"
             exact

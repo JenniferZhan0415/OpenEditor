@@ -1,13 +1,13 @@
 .home {
     text-align: center;
-    padding: 7rem 0;
+    padding: 5rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     &__title {
-        margin: 0 0 6rem 0;
+        margin: 0 0 5rem 0;
     }
     &__version-box {
         display: flex;
@@ -30,12 +30,13 @@
         }
     }
     &__button {
-        margin: 0 2rem;
+        margin: 1rem 2rem;
         border-radius: 3rem;
         font-family: "IBM Plex Sans", sans-serif;
         font-weight: 300;
         font-size: 2rem;
-        padding: 1rem 6rem;
+        padding: 1rem 5rem;
+        min-width: 17rem;
         &:hover {
             cursor: pointer;
             background-color: black;

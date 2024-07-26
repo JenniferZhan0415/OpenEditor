@@ -5,16 +5,16 @@
     "password": "1234",
     "documentIds": [
       {
-        "id": "f7210015-584b-4c7d-9fe8-f28a59c10b31",
+        "id": "f7210015-584b-4c7d-9fe8-f28a59c10b30",
         "title": "Letter"
       },
       {
         "id": "f7210015-584b-4c7d-9fe8-f28a59c10b31",
-        "title": "Grocery List"
+        "title": "Project proposal"
       },
       {
-        "id": "f7210015-584b-4c7d-9fe8-f28a59c10b31",
-        "title": "Project proposal"
+        "id": "f7210015-584b-4c7d-9fe8-f28a59c10b32",
+        "title": "Grocery List"
       }
     ]
   },

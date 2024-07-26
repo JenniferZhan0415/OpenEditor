@@ -1,0 +1,346 @@
+{
+  "ops": [
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "Grocery List "
+    },
+    {
+      "attributes": {
+        "header": 1
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "Fruits & Vegetables "
+    },
+    {
+      "attributes": {
+        "header": 1
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "---------------------- "
+    },
+    {
+      "attributes": {
+        "header": 1
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "- Apples "
+    },
+    {
+      "attributes": {
+        "header": 2
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "- Bananas "
+    },
+    {
+      "attributes": {
+        "header": 2
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "- Oranges "
+    },
+    {
+      "attributes": {
+        "header": 2
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "- Strawberries "
+    },
+    {
+      "attributes": {
+        "header": 2
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "- Broccoli "
+    },
+    {
+      "attributes": {
+        "header": 2
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "- Carrots "
+    },
+    {
+      "attributes": {
+        "header": 2
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "- Spinach "
+    },
+    {
+      "attributes": {
+        "header": 2
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "- Tomatoes "
+    },
+    {
+      "attributes": {
+        "header": 2
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "- Potatoes "
+    },
+    {
+      "attributes": {
+        "header": 2
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "header": 1
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "Dairy Products "
+    },
+    {
+      "attributes": {
+        "header": 1
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "---------------------- "
+    },
+    {
+      "attributes": {
+        "header": 1
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "- Milk "
+    },
+    {
+      "attributes": {
+        "header": 2
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "- Cheese "
+    },
+    {
+      "attributes": {
+        "header": 2
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "- Yogurt "
+    },
+    {
+      "attributes": {
+        "header": 2
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "- Butter "
+    },
+    {
+      "attributes": {
+        "header": 2
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "- Eggs Meat & Seafood "
+    },
+    {
+      "attributes": {
+        "header": 2
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "---------------------- "
+    },
+    {
+      "attributes": {
+        "header": 1
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "- Chicken breasts "
+    },
+    {
+      "attributes": {
+        "header": 2
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "- Ground beef "
+    },
+    {
+      "attributes": {
+        "header": 2
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "- Salmon fillets "
+    },
+    {
+      "attributes": {
+        "header": 2
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "- Shrimp Bakery & Grains "
+    },
+    {
+      "attributes": {
+        "header": 2
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "---------------------- "
+    },
+    {
+      "attributes": {
+        "header": 1
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "Other "
+    },
+    {
+      "attributes": {
+        "header": 1
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "---------------------- "
+    },
+    {
+      "attributes": {
+        "header": 1
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "font": "monospace"
+      },
+      "insert": "- [Any other items you may need]"
+    },
+    {
+      "attributes": {
+        "header": 2
+      },
+      "insert": "\n"
+    }
+  ]
+}

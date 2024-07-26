@@ -1,45 +1,47 @@
 import { useRef, useState } from "react";
 import axios from "axios";
 
-import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Documents } from "../../pages/documents/Documents";
 
 import { Link } from "react-router-dom";
 import "./Login.scss";
 import Header from "../Header/Header";
+import { useDispatch } from "react-redux";
+import { setDocuments } from "../../store/documentsSlice";
 
 export default function Login() {
   const formRef = useRef();
-  const [isSubmitted, setIsSubmitted] = useState(false);
   const [idArray, setIdArray] = useState([]);
   const password = "1234";
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const email = formRef.current.email.value;
     const userpassword = formRef.current.password.value;
-    console.log(email, userpassword);
 
     if (userpassword == password) {
       const getdocuments = async () => {
         const response = await axios.get(
           `http://localhost:5231/login/${email}`
         );
-        console.log(response.data);
         const array = response.data;
         setIdArray(array);
-        setIsSubmitted(true);
+
+        dispatch(setDocuments(array));
+        navigate("/documents");
       };
 
       getdocuments();
-      console.log(idArray);
     } else {
       alert("Incorrect Password");
     }
   };
   return (
     <>
-      <section className={`${isSubmitted == true ? "login--hidden" : "login"}`}>
+      <section className="login">
         <Header />
         <form className={`form `} onSubmit={handleSubmit} ref={formRef}>
           <h2 className="form__title">Welcome back!</h2>
@@ -71,10 +73,10 @@ export default function Login() {
           </div>
         </form>
       </section>
-      {console.log(idArray.length)}
+      {/* {console.log(idArray.length)}
       {isSubmitted !== false && (
         <>{idArray.length > 0 && <>{<Documents idArray={idArray} />}</>}</>
-      )}
+      )} */}
     </>
   );
 }

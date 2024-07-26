@@ -5,7 +5,7 @@ export default function Header() {
     <>
       <div className="header__version-box">
         <p className="header__version">v1.0.0</p>
-        <h1 className="header__title">OpenEditor!</h1>
+        <h1 className="header__title">OpenEditor</h1>
       </div>
     </>
   );

@@ -132,7 +132,7 @@ export default function TextEditor() {
 
     saveButton.addEventListener("click", () => {
       const contentBody = q.getContents();
-      navigate("/");
+      navigate("/documents");
       // console.log(documentId);
       // console.dir(contentBody);
       try {
@@ -152,7 +152,7 @@ export default function TextEditor() {
 
     cancelButton.addEventListener("click", () => {
       console.log("clicking on ");
-      navigate("/login");
+      navigate("/documents");
     });
 
     q.disable();

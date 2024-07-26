@@ -12,6 +12,7 @@ export default function Templates() {
     <>
       <div className="template-box">
         <Header />
+        <h2 className="template-tag">Templates: </h2>
         <section className="template">
           <div className="template__image-box">
             <Link to={"/new"}>
