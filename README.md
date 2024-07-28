@@ -15,7 +15,7 @@ This project aims to create a seamless user experience for teams and individuals
 ## Functions
 
 - **User Log in:** Authenticate users to access the application.
-- **Request Previous Documents:** Make requests to the API to display previously saved documents.
+- **Request Previous Documents:** Make requests to the localhost API to display previously saved documents.
 - **Template Selection:** Allow users to choose the template they want for their document.
 - **Save Documents:** Save the documents to the API using a POST request.
 - **Invite Friends:** Invite friends to live edit the document together.
