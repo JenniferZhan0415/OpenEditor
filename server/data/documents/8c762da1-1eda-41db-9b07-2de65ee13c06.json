@@ -1,0 +1,113 @@
+{
+  "ops": [
+    {
+      "attributes": {
+        "height": "8.137055053642918",
+        "width": "620.9999999999999",
+        "background": "transparent",
+        "color": "#695d46"
+      },
+      "insert": {
+        "image": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXdvJWzIdwzpUNFPqPHfJNNH-Pyeerrcs47_4000d4oSVY3JYJxpGRQsnq9PwRxnVvnJtGT8ysE5Y6y2Vnfi0TqHZ6MAT4hf-OmTC7BIRUElk9dImWA-Da-Il8eKMWPuOogV36M4aMjHzlOiVFWAaRk1Awpa?key=Z8zfgSd_mBamGZBZrVq27w"
+      }
+    },
+    {
+      "attributes": {
+        "background": "transparent",
+        "color": "#695d46",
+        "bold": true
+      },
+      "insert": "Travel Plan - Japan"
+    },
+    {
+      "attributes": {
+        "header": 1
+      },
+      "insert": "\n"
+    },
+    {
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "height": "416",
+        "width": "624",
+        "background": "transparent",
+        "color": "#695d46"
+      },
+      "insert": {
+        "image": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcVQjvGfiJiSuh7kYodmIN6YsK9Hwg9XExrYYea00IUlSoOhz4EsRTsuVk5ZCPXbUHK9Fu39ry3S-BJ1527BaXSW1Hhhvq9Y-9AmrYW2fhJQri5yxXYW6ocMWnH1X-SWZhRpI2bBrnncj1VFQXCON-2_E1G?key=Z8zfgSd_mBamGZBZrVq27w"
+      }
+    },
+    {
+      "insert": "\n\n"
+    },
+    {
+      "attributes": {
+        "background": "transparent",
+        "color": "#ff5e0e",
+        "bold": true
+      },
+      "insert": "Hotels"
+    },
+    {
+      "attributes": {
+        "header": 1
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "background": "transparent",
+        "color": "#695d46"
+      },
+      "insert": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper."
+    },
+    {
+      "insert": "\n\n"
+    },
+    {
+      "attributes": {
+        "background": "transparent",
+        "color": "#ff5e0e",
+        "bold": true
+      },
+      "insert": "Flights"
+    },
+    {
+      "attributes": {
+        "header": 1
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "background": "transparent",
+        "color": "#695d46"
+      },
+      "insert": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit"
+    },
+    {
+      "attributes": {
+        "list": "ordered"
+      },
+      "insert": "\n"
+    },
+    {
+      "attributes": {
+        "background": "transparent",
+        "color": "#695d46"
+      },
+      "insert": "Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
+    },
+    {
+      "attributes": {
+        "list": "ordered"
+      },
+      "insert": "\n"
+    },
+    {
+      "insert": "\n\n"
+    }
+  ]
+}
