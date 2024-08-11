@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "email": "am@gmail.com",
+        "password": "1234",
+        "documentIds": [
+            {
+                "id": "f7210015-584b-4c7d-9fe8-f28a59c10b30",
+                "title": "Letter"
+            },
+            {
+                "id": "f7210015-584b-4c7d-9fe8-f28a59c10b31",
+                "title": "Project proposal"
+            },
+            {
+                "id": "f7210015-584b-4c7d-9fe8-f28a59c10b32",
+                "title": "Grocery List"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "email": "jz@gmail.com",
+        "password": "1234",
+        "documentIds": [
+            {
+                "id": "f7210015-584b-4c7d-9fe8-f28a59c10b31",
+                "title": "Project proposal"
+            }
+        ]
+    }
+]

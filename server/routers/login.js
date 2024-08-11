@@ -1,21 +1,28 @@
-import express, { json, Router } from "express";
+import express from "express";
+import jwt from "jsonwebtoken";
+import bcrypt from "bcrypt";
 import fs from "fs";
+import { config } from "dotenv";
 
+config();
 const router = express.Router();
-const file_path = "./data/user.json";
+const SECRET_KEY = process.env.SECRET_KEY ?? "";
 
-router.get("/:email", (req, res) => {
-  const email = req.params.email.toString();
+const readUser = () => {
+  const data = fs.readFileSync("./data/user.json");
+  const users = JSON.parse(data);
+  return users;
+};
 
-  const userData = JSON.parse(fs.readFileSync(file_path));
-  console.log(userData);
-
-  const reqData = userData.find((user) => user.email == email);
-  if (reqData) {
-    console.log(reqData.documentIds);
-    res.status(200).send(reqData.documentIds);
+router.post("/", async (req, res) => {
+  let { username, password } = req.body;
+  const users = readUser();
+  const user = users[username];
+  if (user && (await bcrypt.compare(password, user.hashedPassword))) {
+    let token = jwt.sign({ username }, SECRET_KEY);
+    res.json({ token: token });
   } else {
-    res.send("user doesn't exist, please create a new account");
+    res.sendStatus(401);
   }
 });
 

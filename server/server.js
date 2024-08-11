@@ -3,7 +3,9 @@ import { createServer } from "http";
 import { Server as SocketIOSever } from "socket.io";
 import fs from "fs";
 import cors from "cors";
-import loginRouter from "./routers/login.js";
+import LoginRouter from "./routers/login.js";
+import SignupRouter from "./routers/signup.js";
+import Profile from "./routers/profile.js";
 
 const app = express();
 
@@ -74,4 +76,6 @@ io.on("connection", (socket) => {
   });
 });
 
-app.use("/login", loginRouter);
+app.use("/login", LoginRouter);
+app.use("/signup", SignupRouter);
+app.use("/profile", Profile);
