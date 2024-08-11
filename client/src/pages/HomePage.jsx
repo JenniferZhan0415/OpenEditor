@@ -12,6 +12,8 @@ export default function HomePage() {
 
         <Link to={"/login"}>
           <button className="home__button">Log in</button>
+        </Link>
+        <Link to={"/signup"}>
           <button className="home__button">Sign up</button>
         </Link>
         <ul className="home__content">
