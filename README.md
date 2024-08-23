@@ -2,6 +2,8 @@
 
 OpenEditor is a real-time collaborative text editor application.
 
+https://github.com/user-attachments/assets/6bd00125-4b85-40f8-8a48-6c8f6779d63e
+
 ## Overview
 
 OpenEditor is designed to enable multiple users to edit and interact with documents simultaneously.
