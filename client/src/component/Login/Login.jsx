@@ -25,7 +25,10 @@ export default function Login() {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-
+    console.log({
+      username: formRef.current.username.value,
+      password: formRef.current.password.value,
+    });
     try {
       const response = await axios.post(loginUrl, {
         username: formRef.current.username.value,
@@ -37,7 +40,7 @@ export default function Login() {
       setIsLoginError(false);
       setErrorMessage("");
       console.log("successfully logged in");
-      navigate("/profile");
+      navigate("/documents");
     } catch (error) {
       setIsLoginError(true);
       setErrorMessage(error.response.data);
