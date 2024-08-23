@@ -1,1 +1,29 @@
-{"Jennifer":{"hashedPassword":"$2b$10$0O7VrrMJtC1TuukOzg8TH.qR.s//ImgGWYby4Jre5wkFFUcUJEK7G"},"Jen":{"hashedPassword":"$2b$10$yp9u7xIymG4ZA9t9qaFJ0eQ2W56AMvwVp/.Sohv3oMvgZ4rJrpxie"},"JenniferZhan":{"hashedPassword":"$2b$10$KFVkKbITikEv1WI3lqRKj.6RMs3AhFwRvmpUGgxx8abVPWrVvWzZW"},"jjj":{"hashedPassword":"$2b$10$9t4QOqwyR3nROjNpfbpXuuN9pa9C23JTUefFOi30d8/Nzxk0SayGK"},"Jackey":{"hashedPassword":"$2b$10$g1x4W5BN0GXYTcJj7Ea/OO9iTj7/c2qTM8tnpELzD6/RJQumLEmkG"},"Jackie":{"hashedPassword":"$2b$10$A6paVMZ9Xqt.H5vO25jdwuursiTHWMzcE1zIwZronRzrkWaKTBJFm"}}
+{
+    "Jennifer": {
+        "hashedPassword": "$2b$10$0O7VrrMJtC1TuukOzg8TH.qR.s//ImgGWYby4Jre5wkFFUcUJEK7G"
+    },
+    "Jen": {
+        "hashedPassword": "$2b$10$yp9u7xIymG4ZA9t9qaFJ0eQ2W56AMvwVp/.Sohv3oMvgZ4rJrpxie"
+    },
+    "JenniferZhan": {
+        "hashedPassword": "$2b$10$KFVkKbITikEv1WI3lqRKj.6RMs3AhFwRvmpUGgxx8abVPWrVvWzZW"
+    },
+    "jjj": {
+        "hashedPassword": "$2b$10$9t4QOqwyR3nROjNpfbpXuuN9pa9C23JTUefFOi30d8/Nzxk0SayGK"
+    },
+    "Jackey": {
+        "hashedPassword": "$2b$10$g1x4W5BN0GXYTcJj7Ea/OO9iTj7/c2qTM8tnpELzD6/RJQumLEmkG"
+    },
+    "Jackie": {
+        "hashedPassword": "$2b$10$A6paVMZ9Xqt.H5vO25jdwuursiTHWMzcE1zIwZronRzrkWaKTBJFm"
+    },
+    "Jennifer Zhan": {
+        "hashedPassword": "$2b$10$S/cCbMAjqpCCC5qGr6fRc.SzXa1voCCs94BETXp.aK0UPy2ZkHDe6",
+        "documentIds": [
+            {
+                "id": "f7210015-584b-4c7d-9fe8-f28a59c10b31",
+                "title": "Project proposal"
+            }
+        ]
+    }
+}
